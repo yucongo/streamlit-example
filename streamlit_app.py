@@ -4,7 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import simpletransformers
-import tensorflow as tf
+# import tensorflow as tf
 """
 # Welcome to Streamlit!
 
@@ -18,7 +18,7 @@ xyz
 """
 
 st.write(" simpletransformers: ", simpletransformesr.__version__)
-st.write(" tensorflow: ", tf.__version__)
+# st.write(" tensorflow: ", tf.__version__)
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)

@@ -17,7 +17,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 xyz
 """
 
-st.write(" simpletransformers: ", simpletransformesr.__version__)
+st.write(" simpletransformers: ", simpletransformers.__version__)
 # st.write(" tensorflow: ", tf.__version__)
 
 with st.echo(code_location='below'):

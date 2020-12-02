@@ -6,7 +6,7 @@ import streamlit as st
 import torch
 import simpletransformers
 
-# import tensorflow as tf
+import tensorflow as tf
 """
 # Welcome to Streamlit!
 
@@ -16,12 +16,12 @@ If you have any questions, checkout our [documentation](https://docs.streamlit.i
 forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
-xyz
+
 """
 
-st.write("torch: ", torch.__version__)
+st.write("torch: ", torch.__version__, "GPU: ", torch.cuda.is_available())
 # st.write(" simpletransformers: ", simpletransformers.__version__)
-# st.write(" tensorflow: ", tf.__version__)
+st.write(" tensorflow: ", tf.__version__)
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)

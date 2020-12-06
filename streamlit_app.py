@@ -7,6 +7,9 @@ import streamlit as st
 import simpletransformers
 
 import tensorflow as tf
+
+import pkg_resources
+
 """
 # Welcome to Streamlit!
 
@@ -20,7 +23,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 # st.write("torch: ", torch.__version__, "GPU: ", torch.cuda.is_available())
-st.write(" simpletransformers: ", simpletransformers.__version__)
+st.write(" simpletransformers: ", pkg_resources.get_distribution('simpletransformers').version)  # simpletransformers.__version__)
 st.write(" tensorflow: ", tf.__version__)
 
 with st.echo(code_location='below'):

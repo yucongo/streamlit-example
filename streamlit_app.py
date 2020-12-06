@@ -3,7 +3,7 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-import torch
+# import torch
 import simpletransformers
 
 import tensorflow as tf
@@ -19,7 +19,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 """
 
-st.write("torch: ", torch.__version__, "GPU: ", torch.cuda.is_available())
+# st.write("torch: ", torch.__version__, "GPU: ", torch.cuda.is_available())
 # st.write(" simpletransformers: ", simpletransformers.__version__)
 st.write(" tensorflow: ", tf.__version__)
 
